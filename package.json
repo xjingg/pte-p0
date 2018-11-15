@@ -1,0 +1,45 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "homepage":"http://xjingg.github.io/petss",
+  "main": "app.js",
+  "scripts": {
+    "format": "prettier --write \"*.{js,jsx,css,json}\"",
+    "format-check": "prettier --list-different \"*.{js,jsx,css,json}\"",
+    "lint": "eslint \"**/*.{js,jsx}\"",
+    "dev": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"parcel build index.html --no-cache",
+    "deploy": "gh-pages -d build"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.7.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "install": "^0.12.2",
+    "npm": "^6.4.1",
+    "parcel-bundler": "^1.10.3",
+    "prettier": "^1.14.3"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "acorn": "^6.0.2",
+    "firebase": "^5.5.6",
+    "petfinder-client": "0.0.3",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
